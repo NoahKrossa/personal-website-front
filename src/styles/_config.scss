@@ -44,6 +44,8 @@ $color__blue--dark: #284b63;
 $color__green--dark: #3c6e71;
 $color__gray--dark: #353535;
 $color__gray: #d9d9d9;
+$color__white: #fff;
+$color__red: #fe5f55;
 /* grayscale*/
 /* 9 level of gray g--[1-9], when more increase more lighten gray*/
 $color__grayscale: (
@@ -63,3 +65,13 @@ $color__grayscale: (
 $font-family--base:Arial, Helvetica, sans-serif;
 //=======================================================
 
+/* @font-size
+ * there are 7 sizes, $font__size--[1-7]
+ **/
+ $font__size--1: 3rem;
+ $font__size--2: 2.4rem;
+ $font__size--3: 2rem;
+ $font__size--4: 1.4rem;
+ $font__size--5: 1.2rem;
+ $font__size--6: 1rem;
+ $font__size--7: 0.85rem;
