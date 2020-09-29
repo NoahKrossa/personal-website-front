@@ -1,0 +1,22 @@
+/* Config */
+$container-padding--mobile: 0 $unit *10;
+$container-padding--tablet: 0 $unit * 20;
+$container-padding--small-desktop: 0 $unit * 100;
+$container-padding--desktop: 0 $unit * 200;
+
+.container {
+  padding: $container-padding--mobile;
+
+  @include bp-least($breakpoint__lg - .1) {
+    padding: $container-padding--tablet;
+  }
+  
+  @include bp-least($breakpoint__xl - .1) {
+    padding: $container-padding--small-desktop;
+  }
+
+  @include bp-least($breakpoint__xxl - .1) {
+    padding: $container-padding--desktop;
+  }
+}
+

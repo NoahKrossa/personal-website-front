@@ -1,0 +1,62 @@
+/* base/_config */
+
+
+/* @Breakpoints*/
+/* List of breakpoints, contain: 
+  - xs: smallest screen
+  - sm: small screen (mobile)
+  - md: mmedium screen (tablet, mobile[Landscape])
+  - lg: large sceen
+  - xl: desktop
+  - xxl: HD widthscreen
+*/
+$breakpoints: (
+  xs: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 1020px,
+  xl: 1281px,
+  xxl: 1920px,
+);
+/* individual breakpoints*/
+$breakpoint__xs: map-get($breakpoints, xs);
+$breakpoint__sm: map-get($breakpoints, sm);
+$breakpoint__md: map-get($breakpoints, md);
+$breakpoint__lg: map-get($breakpoints, lg);
+$breakpoint__xl: map-get($breakpoints, xl);
+$breakpoint__xxl: map-get($breakpoints,  xxl);
+//=======================================================
+
+
+/* @Unit */
+/* 
+  This var is for keep padding and margin semanticity, it's value is based
+  in golden proportion, for more info see: https://en.wikipedia.org/wiki/Golden_ratio
+  usage: 
+    whene u need to set some padding or margin, use $unit * [integer]
+*/
+$unit: 0.101125rem; /* 1.618px whene HTML font-size:16px*/
+//=======================================================
+
+
+/* @colors */
+$color__blue--dark: darkblue;
+/* grayscale*/
+/* 9 level of gray g--[1-9], when more increase more lighten gray*/
+$color__grayscale: (
+  g--1:#212529,
+  g--2: #343a40,
+  g--3: #495057,
+  g--4: #6c757d,
+  g--5: #adb5bd,
+  g--6: #ced4da,
+  g--7: #dee2e6,
+  g--8: #e9ecef, 
+  g--9: #f8f9fa
+);
+//=======================================================
+
+/* @font-family */
+$font-family--base:Arial, Helvetica, sans-serif;
+//=======================================================
+

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "lib": ["ES2016", "DOM"],
+        "outDir": "dist",
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    },
+    "exclude": ["node_modules", "dist"],
+    "include": ["src/**/*"]
+}

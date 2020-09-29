@@ -1,0 +1,15 @@
+/** 
+ * In this file import all global SASS code
+*/
+
+/* CONFIG */
+@import './config';
+
+/* MIXINS */
+@import './mixins/breakpoits';
+
+/* NORMALIZE */
+@import './normalize';
+
+/* LAYOUT */
+@import './layout//container';

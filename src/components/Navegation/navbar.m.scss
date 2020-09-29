@@ -1,0 +1,11 @@
+@import '../../styles/main.scss'; /* Global depen*/
+
+/* CONFIG */
+
+.navbar {
+  background-color: $color__blue--dark;
+}
+
+.isActive {
+  background-color: red;
+}

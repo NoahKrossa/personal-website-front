@@ -1,0 +1,34 @@
+
+/* base/mixins/_breakpoints.mixin.scss */
+
+/*
+  Mixins for control media quieries
+  - @mixin bp-least(device-size): apply media quierie to min-width size
+  - @mixin bp-max(device-size): apply media quierie to max-width size
+  - @mixin bp-max(device-size-min, device-size-max): apply media quierie between tow sizes(min and max)
+  Usage: 
+    .element { 
+      @include bp-least(320px) {
+        rules for media screen min-width:320px
+        ...
+      }
+    }
+*/
+
+@mixin bp-least($size) {
+  @media screen and (min-width: $size) {
+      @content;
+  }
+}
+
+@mixin bp-max($size) {
+  @media screen and (max-width: $size) {
+      @content;
+  }
+}
+
+@mixin bp-between($size-1, $size-2) {
+  @media screen and (min-width: $size-1) and (max-width: $size-2) {
+      @content;
+  }
+}
