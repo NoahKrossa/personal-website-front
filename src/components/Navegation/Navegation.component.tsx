@@ -8,8 +8,8 @@ import avatar from '../../public/images/favicon-96x96.png'
 export default class NavegationComponent extends Component {
   render() {
     return (
-      <div className={styles.navbar}>
-        <div className="container">
+     
+        <div className={styles.navbar+" "+"container"}>
           <div className={styles.brand}>
             <figure className={styles.avatar}>
               <img src={avatar} alt="" />
@@ -41,7 +41,6 @@ export default class NavegationComponent extends Component {
             </NavLink>
           </nav>
         </div>
-      </div>
     )
   }
 }
