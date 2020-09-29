@@ -75,7 +75,7 @@ export default class NavegationComponent extends Component {
             to="/courses"
             activeClassName={styles.is_active}
           >
-            Courses
+            Cursos
           </NavLink>
           <NavLink
             onClick={() => {
@@ -85,7 +85,7 @@ export default class NavegationComponent extends Component {
             to="/projects"
             activeClassName={styles.is_active}
           >
-            Projects
+            Proyectos
           </NavLink>
           <NavLink
             onClick={() => {
