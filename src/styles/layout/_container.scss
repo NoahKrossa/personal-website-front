@@ -3,6 +3,7 @@ $container-padding--mobile: 0 $unit *10;
 $container-padding--tablet: 0 $unit * 20;
 $container-padding--small-desktop: 0 $unit * 100;
 $container-padding--desktop: 0 $unit * 200;
+$container-separator-size: ($unit * 20);
 
 .container {
   padding: $container-padding--mobile;
@@ -20,3 +21,7 @@ $container-padding--desktop: 0 $unit * 200;
   }
 }
 
+/* Container separator*/
+.container-separator {
+  height: $container-separator-size ;
+}

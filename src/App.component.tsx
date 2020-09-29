@@ -9,6 +9,7 @@ export default class AppComponent extends Component {
     return <>
       <Router>
         <NavegationComponent/>
+        <div className="container-separator"/>
         <Routes/>
       </Router>
     </> 
