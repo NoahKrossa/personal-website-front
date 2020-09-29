@@ -1,0 +1,23 @@
+
+/* Use these extends when you need some flexbox alignmet config
+*/
+
+%flex {
+  display: flex;
+}
+
+%align-center--x {
+  @extend %flex;
+  justify-content: center;
+}
+
+%align-center--y {
+  @extend %flex;
+  align-items: center;
+}
+
+%align-space-betwen--x {
+  @extend %flex;
+  justify-content: space-between;
+}
+
