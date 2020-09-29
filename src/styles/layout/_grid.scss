@@ -6,6 +6,9 @@
  * .col_50__xl {
  *   width: 50%
  * }
+ * 
+ * !IMPORTANT: 
+ * USE THOSE CLASSES INTO .container element
 */
 @each $device, $size in $breakpoints {
   @for $i from 1 through 20 {
