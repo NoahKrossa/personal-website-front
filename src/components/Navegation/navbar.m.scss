@@ -1,11 +1,99 @@
 @import '../../styles/main.scss'; /* Global depen*/
 
-/* CONFIG */
+/* CONFIG VARS*/
+// Navbar
+$navbar-bg: $color__gray--dark;
+$navbar-color: $color__white;
+$navbar-height: ($unit * 35);
+$avatar-size: ($unit * 25);
+$avatar-border-radius: 50%;
+// Brand
+$brand-font-size: $font__size--7;
+// Menu
+$menu-button-font-size:  $font__size--4;
+$menu-item-color: $color__white;
+$menu-border-radius: 0 0 5px 0;
+$menu-bg: $color__blue--dark;
+$menu-item-color--active: $color__red;
+$menu-padding: ($unit*10) 0;
+$menu-size--mobile: $breakpoint__xs;
+$menu-item-padding: ($unit *8) ($unit*10);
 
-.navbar {
-  background-color: $color__blue--dark;
+/* COMMON*/
+a {
+  text-decoration: none;
+}
+.navbar,
+.brand {
+  @extend %align-center--y;
+}
+.avatar img,
+.brand_text_regular,
+.brand_text_strong {
+  display: block;
 }
 
-.isActive {
-  background-color: red;
+/* NAVBAR */
+.navbar {
+  background-color: $navbar-bg;
+  color: $navbar-color;
+  height: $navbar-height;
+  @extend %align-space-betwen--x;
+  flex-direction: row-reverse;
+}
+
+/* BRAND */
+// .brand {}
+.brand_text {
+  font-size: $brand-font-size;
+  margin-left: $unit * 5;
+}
+.brand_text_strong {
+  font-weight: 800;
+}
+// .brand_text_regular {}
+
+.avatar img {
+  width: $avatar-size;
+  border-radius: $avatar-border-radius;
+  border: 1px solid $navbar-color;
+}
+
+/* MENU */
+#menu_button {
+  display: none;
+}
+.menu_button {
+  font-size: $menu-button-font-size;
+  cursor: pointer;
+  display: block;
+  height: $menu-button-font-size;
+}
+.menu {
+  transition: all .5s;
+  border-radius: $menu-border-radius;
+  position: absolute;
+  left: 0;
+  transform: translateX(0);
+  top: $navbar-height;
+  width: $menu-size--mobile;
+  padding: $menu-padding;
+  background-color: $menu-bg;
+}
+.is_hide {
+  transform: translateX(-100%);
+}
+
+.menu_item {
+  display: block;
+  padding: $menu-item-padding;
+  color: $menu-item-color;
+
+  &:hover,
+  &.is_active {
+    background-color: lighten($menu-bg, 10);
+  }
+  &.is_active {
+    color:$menu-item-color--active;
+  }
 }

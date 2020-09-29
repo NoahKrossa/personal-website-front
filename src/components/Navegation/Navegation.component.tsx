@@ -1,15 +1,38 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTshirt } from '@fortawesome/free-solid-svg-icons'
 import styles from './navbar.m.scss'
 import avatar from '../../public/images/favicon-96x96.png'
 
 export default class NavegationComponent extends Component {
+  state = {
+    menuCollapsed: true
+  }
+
+  hideMenu() {
+    this.setState({
+      menuCollapsed: true
+    })
+  }
+  toggleMenu() {
+    this.setState({
+      menuCollapsed: !this.state.menuCollapsed
+    })
+  }
+
   render() {
+    const isHide = this.state.menuCollapsed ? styles.is_hide : ''
+    console.log('rendering')
     return (
-     
-        <div className={styles.navbar+" "+"container"}>
+      <div className={styles.navbar + ' ' + 'container'}>
+        <NavLink
+          onClick={() => {
+            this.hideMenu()
+          }}
+          to="/"
+          exact
+        >
           <div className={styles.brand}>
             <figure className={styles.avatar}>
               <img src={avatar} alt="" />
@@ -21,26 +44,61 @@ export default class NavegationComponent extends Component {
               </span>
             </div>
           </div>
-          <nav className={styles.menu}>
-            <label htmlFor="btn-menu">
-              <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-            </label>
-            <input type="checkbox" id="btn-menu" />
-
-            <NavLink to="/blog" activeClassName={styles.is_active} exact>
-              BLOG
-            </NavLink>
-            <NavLink to="/courses" activeClassName={styles.is_active}>
-              CURSOS
-            </NavLink>
-            <NavLink to="/projects" activeClassName={styles.is_active}>
-              PROYECTOS
-            </NavLink>
-            <NavLink to="/about" activeClassName={styles.is_active}>
-              SOBRE ME
-            </NavLink>
-          </nav>
-        </div>
+        </NavLink>
+        <label
+          onClick={()=> {
+            this.toggleMenu()
+          }}
+          className={styles.menu_button}
+          htmlFor={styles.menu_button}
+        >
+          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+        </label>
+        <input type="checkbox" id={styles.menu_button} />
+        <nav className={styles.menu + ' ' + isHide}>
+          <NavLink
+            onClick={() => {
+              this.hideMenu()
+            }}
+            className={styles.menu_item}
+            to="/blog"
+            activeClassName={styles.is_active}
+            exact
+          >
+            Blog
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              this.hideMenu()
+            }}
+            className={styles.menu_item}
+            to="/courses"
+            activeClassName={styles.is_active}
+          >
+            Courses
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              this.hideMenu()
+            }}
+            className={styles.menu_item}
+            to="/projects"
+            activeClassName={styles.is_active}
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            onClick={() => {
+              this.hideMenu()
+            }}
+            className={styles.menu_item}
+            to="/about"
+            activeClassName={styles.is_active}
+          >
+            Sobre mi
+          </NavLink>
+        </nav>
+      </div>
     )
   }
 }
