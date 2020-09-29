@@ -40,7 +40,10 @@ $unit: 0.101125rem; /* 1.618px whene HTML font-size:16px*/
 
 
 /* @colors */
-$color__blue--dark: darkblue;
+$color__blue--dark: #284b63;
+$color__green--dark: #3c6e71;
+$color__gray--dark: #353535;
+$color__gray: #d9d9d9;
 /* grayscale*/
 /* 9 level of gray g--[1-9], when more increase more lighten gray*/
 $color__grayscale: (
