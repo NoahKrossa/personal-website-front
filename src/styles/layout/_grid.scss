@@ -1,0 +1,16 @@
+/*
+ * Generate 20 columns for each breakpoint
+ * format:
+ * .col_[size:(5 to 100 by 5)]__[breakpoint key]
+ * example:
+ * .col_50__xl {
+ *   width: 50%
+ * }
+*/
+@each $device, $size in $breakpoints {
+  @for $i from 1 through 20 {
+    .col_#{$i*5}__#{$device} {
+      width: $i * 5%;
+    } 
+  }
+}
