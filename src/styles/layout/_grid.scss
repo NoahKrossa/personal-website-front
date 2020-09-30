@@ -8,12 +8,26 @@
  * }
  * 
  * !IMPORTANT: 
- * USE THOSE CLASSES INTO .container element
+ * USE THOSE CLASSES INTO .row element
 */
 @each $device, $size in $breakpoints {
-  @for $i from 1 through 20 {
-    .col_#{$i*5}__#{$device} {
-      width: $i * 5%;
-    } 
+  @media screen and (min-width: $size) {
+    @for $i from 1 through 20 {
+      .col_#{$i*5}__#{$device} {
+        width: $i * 5%;
+      }
+    }
+  }
+}
+
+.row {
+  @extend %flex;
+  flex-wrap: wrap;
+
+  &.show {
+    &>div {
+      background-color: red;
+      min-height: 100px;
+    }
   }
 }
