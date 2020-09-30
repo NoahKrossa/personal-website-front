@@ -6,18 +6,45 @@
   display: flex;
 }
 
-%align-center--x {
-  @extend %flex;
-  justify-content: center;
-}
+/* Option list */
+$alignment_axes:(x, y);
+$alignment_options: (center, start, end);
+$alignment_options--x: (space-around, space-between, space-evenly);
+$alignment_options--y: baseline;
 
-%align-center--y {
-  @extend %flex;
-  align-items: center;
+/*
+ * FORMAT:
+ * %align-[option]--[affected axe]
+ * Example:
+ * %align-center--x = {display: flex; justify-content: center}
+*/
+@each $axe in $alignment_axes {
+  @if $axe == x {
+    @each $common_option in $alignment_options {
+      %align-#{$common_option}--#{$axe} {
+        @extend %flex;
+        justify-content: $common_option;
+      }
+    }
+    @each $option in  $alignment_options--x {
+      %align-#{$option}--#{$axe} {
+        @extend %flex;
+        justify-content: $option;
+      }
+    } 
+  }
+  @else {
+    @each $common_option in $alignment_options {
+      %align-#{$common_option}--#{$axe} {
+        @extend %flex;
+        align-items: $common_option;
+      }
+    }
+    @each $option in  $alignment_options--x {
+      %align-#{$option}--#{$axe} {
+        @extend %flex;
+        align-items: $option;
+      }
+    } 
+  }
 }
-
-%align-space-betwen--x {
-  @extend %flex;
-  justify-content: space-between;
-}
-
