@@ -1,14 +1,8 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CleanTerminalWebpackPlugin = require('clean-terminal-webpack-plugin')
-const { TypedCssModulesPlugin } = require('typed-css-modules-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = (env, options) => {
-  const isDevelopment = options.mode === 'development'
-  const styleLoader = isDevelopment
-    ? 'style-loader'
-    : MiniCssExtractPlugin.loader
-
   return {
     resolve: {
       extensions: ['.ts', '.tsx', '.js', '.css', '.scss']
