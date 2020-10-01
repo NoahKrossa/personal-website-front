@@ -38,7 +38,7 @@ a {
   background-color: $navbar-bg;
   color: $navbar-color;
   height: $navbar-height;
-  @extend %align-space-betwen--x;
+  @extend %align-space-between--x;
   flex-direction: row-reverse;
 
   /* DESKTOP NAVBAR*/
@@ -88,6 +88,7 @@ a {
   width: $menu-size--mobile;
   padding: $menu-padding;
   background-color: $menu-bg;
+  z-index: 10000;
 
   /* DESKTOP MENU*/
   @include bp-least($breakpoint__xl - 0.1) {
@@ -102,7 +103,7 @@ a {
       &:hover,
       &.is_active {
         background-color: transparent;
-        color: $menu-item-color--active;
+        color: $menu-item-color--active ;
       }
     }
   }
