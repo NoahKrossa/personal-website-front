@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.15.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "react": "^16.13.1",
@@ -24,6 +26,7 @@
     "@types/mocha": "^8.0.3",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
+    "@types/react-fontawesome": "^1.6.4",
     "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
     "@types/redux": "^3.6.0",
