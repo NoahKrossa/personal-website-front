@@ -1,0 +1,21 @@
+@mixin ratio-aspect($ratio: 1 1) {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: nth($ratio, 2 )/ nth($ratio, 1 ) * 100%;
+  }
+
+  > .content {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
