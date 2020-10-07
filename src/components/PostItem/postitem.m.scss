@@ -5,8 +5,10 @@ $post-item-border-color: $color__gray;
 $body-padding: ($unit *5);
 $title-font-size: $font__size--4;
 $tag-font-size: $font__size--7;
-$tag-bg: map-get($color__grayscale, g--8 );
+$tag-bg: map-get($color__grayscale, g--7 );
+$body-bg: map-get($color__grayscale, g--9 );
 $tag-color: $color__gray--dark;
+$tag-font-family: $font-family--mono;
 
 .post_item {
   border: 1px solid $post-item-border-color;
@@ -27,7 +29,8 @@ $tag-color: $color__gray--dark;
 }
 
 .body {
-  padding: $body-padding;
+  padding: $body-padding*2;
+  background-color:$body-bg ;
 }
 .header {
   padding-bottom: $body-padding*2;
@@ -44,4 +47,5 @@ $tag-color: $color__gray--dark;
   padding: $body-padding $body-padding*2;
   background-color: $tag-bg  ;
   color: $tag-color;
+  font-family: $tag-font-family;
 }
