@@ -43,21 +43,21 @@ export default class HomeView extends Component {
                     Tambien me puedes encontrar en
                   </p>
                   <nav className={styles.presentation_socialmedia}>
-                    <a className={styles.social_icon} href="/">
+                    <a  href="https://www.youtube.com/channel/UCWTBu46QuLp_uwhXKgo0u7w?view_as=subscriber" rel="external" target="_blank"  className={styles.social_icon}>
                       <FontAwesomeIcon
                         className={styles.icon}
                         icon={faYoutube as IconProp}
                       />
                       <span className={styles.text}>Canal de youtube</span>
                     </a>
-                    <a href="/" className={styles.social_icon}>
+                    <a href="https://twitter.com/noahkrossa" rel="external" target="_blank" className={styles.social_icon}>
                       <FontAwesomeIcon
                         className={styles.icon}
                         icon={faTwitter as IconProp}
                       />
                       <span className={styles.text}>@noahkrossa</span>
                     </a>
-                    <a href="/" className={styles.social_icon}>
+                    <a href="https://instagram.com/noahkrossa" rel="external" target="_blank" className={styles.social_icon}>
                       <FontAwesomeIcon
                         className={styles.icon}
                         icon={faInstagram as IconProp}
