@@ -73,7 +73,7 @@ module.exports = (env, options) => {
         onlyInWatchMode: true
       }),
       new CopyWebpackPlugin({
-        patterns: [{ from: 'src/public/images', to: 'dist/public/images' }]
+        patterns: [{ from: 'src/public/images', to: 'images' }]
       })
     ],
     stats: {
