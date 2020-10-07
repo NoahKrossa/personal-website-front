@@ -8,7 +8,8 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "jsx": "react",
-        "plugins": [{ "name": "typescript-plugin-css-modules" }]
+        "plugins": [{ "name": "typescript-plugin-css-modules" }],
+        "resolveJsonModule": true
     },
     "exclude": ["node_modules", "dist"],
     "include": ["src/**/*"]

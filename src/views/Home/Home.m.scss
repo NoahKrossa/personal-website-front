@@ -8,7 +8,8 @@ $icon-font-size: $font__size--4;
 
 /* COMMON*/
 .presentation_title,
-.presentation_subtitle {
+.presentation_subtitle,
+.title {
   font-weight: 700;
 }
 
@@ -44,7 +45,8 @@ $icon-font-size: $font__size--4;
     padding-right: $gap*3;
   }
 }
-.presentation_title {
+.presentation_title,
+.title {
   font-size: $title-font-size;
 }
 

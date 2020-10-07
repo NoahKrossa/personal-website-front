@@ -1,0 +1,47 @@
+@import '../../styles/main.scss';
+
+$post-item-margin: ($unit*10);
+$post-item-border-color: $color__gray;
+$body-padding: ($unit *5);
+$title-font-size: $font__size--4;
+$tag-font-size: $font__size--7;
+$tag-bg: map-get($color__grayscale, g--8 );
+$tag-color: $color__gray--dark;
+
+.post_item {
+  border: 1px solid $post-item-border-color;
+  margin-bottom: $post-item-margin;
+  border-radius: 5px;
+  @extend %align-start--x;
+
+  @include bp-least($breakpoint__lg) {
+    margin-right: $post-item-margin;
+    margin-bottom: $post-item-margin*2;
+  }
+}
+.image {
+  @include ratio-aspect(16 9);
+}
+.content {
+  border-radius: 5px 5px 0 0 ;
+}
+
+.body {
+  padding: $body-padding;
+}
+.header {
+  padding-bottom: $body-padding*2;
+  & h2 {
+    font-weight: 600;
+    font-size: $title-font-size ;
+    padding-bottom: $body-padding;
+  }
+}
+.tag {
+  display: table;
+  border-radius: 5px;
+  font-size: $tag-font-size;
+  padding: $body-padding $body-padding*2;
+  background-color: $tag-bg  ;
+  color: $tag-color;
+}
