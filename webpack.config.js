@@ -62,7 +62,8 @@ module.exports = (env, options) => {
     },
     devServer: {
       port: 9000,
-      open: true
+      open: true,
+      historyApiFallback: true
     },
     plugins: [
       new HTMLWebpackPlugin({
