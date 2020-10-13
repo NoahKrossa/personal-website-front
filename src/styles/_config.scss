@@ -39,14 +39,6 @@ $unit: 0.101125rem; /* 1.618px whene HTML font-size:16px*/
 //=======================================================
 
 
-/* @colors */
-$color__blue--dark: #284b63;
-$color__green--dark: #3c6e71;
-$color__green: #2a9d8f;
-$color__gray--dark: #353535;
-$color__gray: #d9d9d9;
-$color__white: #fff;
-$color__red: #fe5f55;
 /* grayscale*/
 /* 9 level of gray g--[1-9], when more increase more lighten gray*/
 $color__grayscale: (
@@ -60,6 +52,15 @@ $color__grayscale: (
   g--8: #e9ecef, 
   g--9: #f8f9fa
 );
+/* @colors */
+$color__blue--dark: #284b63;
+$color__green--dark: #3c6e71;
+$color__green: #2a9d8f;
+$color__gray--dark: #353535;
+$color__gray--light: map-get($color__grayscale, g--7);
+$color__gray: #d9d9d9;
+$color__white: #fff;
+$color__red: #fe5f55;
 //=======================================================
 
 /* @font-family */
