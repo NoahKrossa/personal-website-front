@@ -46,7 +46,7 @@ export default class NavegationComponent extends Component {
           </div>
         </NavLink>
         <label
-          onClick={()=> {
+          onClick={() => {
             this.toggleMenu()
           }}
           className={styles.menu_button}

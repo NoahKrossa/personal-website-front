@@ -5,7 +5,7 @@ export interface AboutViewProps {
 }
 export default class AboutView extends Component<AboutViewProps, {}> {
   render() {
-    const {name} = this.props.match.params
+    const { name } = this.props.match.params
     return (
       <>
         <h1>About {name}</h1>
