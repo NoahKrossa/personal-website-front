@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component, ReactNode } from 'react'
 
-export interface AboutViewProps {
-  match: any
-}
-export default class AboutView extends Component<AboutViewProps, {}> {
-  render() {
-    const { name } = this.props.match.params
+export default class AboutView extends Component {
+  render(): ReactNode {
     return (
       <>
-        <h1>About {name}</h1>
+        <h1>About</h1>
       </>
     )
   }

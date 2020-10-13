@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, ReactNode } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import styles from './Home.m.scss'
@@ -12,11 +12,8 @@ import data from '../../assets/latestPosts.json'
 /** Components */
 import PostItemComponent from '../../components/PostItem/PostItem.component'
 
-interface HomeViewStats {
-  data: any
-}
-export default class HomeView extends Component<{}, HomeViewStats> {
-  render() {
+export default class HomeView extends Component {
+  render(): ReactNode {
     return (
       <>
         <section>

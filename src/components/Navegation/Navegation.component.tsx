@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTshirt } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styles from './navbar.m.scss'
 import avatar from '../../public/images/favicon-96x96.png'
 
@@ -10,18 +10,18 @@ export default class NavegationComponent extends Component {
     menuCollapsed: true
   }
 
-  hideMenu() {
+  hideMenu(): void {
     this.setState({
       menuCollapsed: true
     })
   }
-  toggleMenu() {
+  toggleMenu(): void {
     this.setState({
       menuCollapsed: !this.state.menuCollapsed
     })
   }
 
-  render() {
+  render(): ReactNode {
     const isHide = this.state.menuCollapsed ? styles.is_hide : ''
     console.log('rendering')
     return (

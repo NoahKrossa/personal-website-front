@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, ReactNode } from 'react'
 import styles from './archiveDisplay.m.scss'
 import { Link } from 'react-router-dom'
 
@@ -31,12 +31,15 @@ interface ArchiveDisplayComponentProps {
   year: string
   archives: Archives[]
 }
+interface ArchiveDisplayComponentState {
+  data: string[]
+}
 
 export default class ArchiveDisplayComponent extends Component<
   ArchiveDisplayComponentProps,
-  {}
+  ArchiveDisplayComponentState
 > {
-  render() {
+  render(): ReactNode {
     const { year, archives } = this.props
     return (
       <div className={styles.archive_content}>

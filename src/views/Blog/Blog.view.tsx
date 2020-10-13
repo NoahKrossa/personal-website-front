@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import styles from './blog.m.scss'
+import React, { Component, ReactNode } from 'react'
+// import styles from './blog.m.scss'
 
 /** Component */
-import ArchiveDisplayComponent from '../../components/ArchiveDisplay/ArchiveDisplay.component'
+// import ArchiveDisplayComponent from '../../components/ArchiveDisplay/ArchiveDisplay.component'
 
 export default class BlogView extends Component {
-  render() {
+  render(): ReactNode {
     return (
       <div className="row">
         <section className=" col_70__lg col_100__xs">

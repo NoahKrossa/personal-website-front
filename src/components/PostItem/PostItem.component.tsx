@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, ReactNode } from 'react'
 import styles from './postitem.m.scss'
 import { Link } from 'react-router-dom'
 
@@ -10,8 +10,8 @@ export interface PostItemProps {
   imgSrc: string
 }
 
-export default class PostItemComponent extends Component<PostItemProps, {}> {
-  render() {
+export default class PostItemComponent extends Component<PostItemProps> {
+  render(): ReactNode {
     const { title, description, link, category, imgSrc } = this.props
     return (
       <>
