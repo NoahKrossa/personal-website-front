@@ -1,45 +1,51 @@
 @import '../../styles/main.scss';
 
 .archive_content {
-    background-color: whitesmoke;
-    color: $color__gray--dark;
-    border: .5px solid $color__gray;
+  background-color: whitesmoke;
+  color: $color__gray--dark;
+  border: 0.5px solid $color__gray;
+  padding-bottom: $unit*5;
 }
 
-.archive_year>span {
-    display: block;
-    font-size: $font__size--4;
-    font-weight: 700;
-    font-family: $font-family--mono;
-    padding: $unit*5;
-    background-color: $color__gray--dark;
-    color: $color__white;
-    margin-bottom: $unit*5;
+.archive_year > span {
+  display: block;
+  font-size: $font__size--4;
+  font-weight: 700;
+  font-family: $font-family--mono;
+  padding: $unit * 5;
+  background-color: $color__gray--dark;
+  color: $color__white;
+  margin-bottom: $unit * 5;
 }
 
-.archive_list>span {
-    display: block;
-    text-transform: uppercase;
-    padding: $unit*5;
-    font-family: $font-family--mono;
-    font-size: $font__size--5;
-    font-weight: 700;
-    background-color: $color__gray--light;
-    color: $color__gray--dark;
-    margin-bottom: $unit*5;
+.archive_list > span {
+  display: block;
+  text-transform: uppercase;
+  padding: $unit * 5;
+  font-family: $font-family--mono;
+  font-size: $font__size--5;
+  font-weight: 700;
+  background-color: $color__gray--light;
+  color: $color__gray--dark;
+  margin-bottom: $unit * 5;
 }
 
 .archive_month {
-    list-style: none;
-    border-bottom: .5px solid $color__gray;
-    padding: 0 $unit*5;
-   
+  list-style: none;
+  border-bottom: 0.5px solid $color__gray;
+  padding: 0 $unit * 5;
 }
 .archive_month > li {
-    padding: $unit*3 $unit*5;
-    margin-bottom: $unit*5;
-    border-bottom: .5px solid $color__gray;
-    &:last-child {
-        border-bottom: none;
-    }
+  padding: $unit * 3 $unit * 5;
+  margin-bottom: $unit * 5;
+  border-bottom: 0.5px solid $color__gray;
+  &:last-child {
+    border-bottom: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &>a {
+    display: block;
+  }
 }

@@ -1,1 +1,22 @@
-@import '../../styles/main.scss'
+@import '../../styles/main.scss';
+
+.section_title {
+  font-size: $font__size--3;
+  padding: $unit*5 0;
+  margin-bottom: $unit*10;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: .5px solid $color__gray;
+  color: $color__gray--dark;
+  
+}
+.section {
+  @include bp-least($breakpoint__lg) {
+    padding-right: $unit*10;
+  }
+}
+.aside {
+  @include bp-least($breakpoint__lg) {
+    padding-left: $unit*10;
+  }
+}
