@@ -13,7 +13,7 @@ export default class AppComponent extends Component {
             <NavegationComponent />
           </header>
           <div className="container-separator" />
-          <main>
+          <main className="container">
             <Routes />
           </main>
         </Router>

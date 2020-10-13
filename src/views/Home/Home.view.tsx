@@ -20,7 +20,6 @@ export default class HomeView extends Component<{}, HomeViewStats> {
     return (
       <>
         <section>
-          <div className="container">
             <div className="row">
               <div
                 className={
@@ -93,11 +92,10 @@ export default class HomeView extends Component<{}, HomeViewStats> {
                 </article>
               </div>
             </div>
-          </div>
         </section>
         <div className="container-separator"></div>
         <div className="container-separator"></div>
-        <section className="container">
+        <section >
         <h2 className={styles.title}>Ultimos articulos</h2>
         <div className="container-separator"></div>
           <div className="row">
