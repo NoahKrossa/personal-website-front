@@ -52,7 +52,7 @@ export default class HomeView extends Component<{}, HomeViewStats> {
                 <nav className={styles.presentation_socialmedia}>
                   <a
                     href="https://www.youtube.com/channel/UCWTBu46QuLp_uwhXKgo0u7w?view_as=subscriber"
-                    rel="external"
+                    rel="noreferrer"
                     target="_blank"
                     className={styles.social_icon}
                   >
@@ -64,7 +64,7 @@ export default class HomeView extends Component<{}, HomeViewStats> {
                   </a>
                   <a
                     href="https://twitter.com/noahkrossa"
-                    rel="external"
+                    rel="noreferrer"
                     target="_blank"
                     className={styles.social_icon}
                   >
@@ -76,7 +76,7 @@ export default class HomeView extends Component<{}, HomeViewStats> {
                   </a>
                   <a
                     href="https://instagram.com/noahkrossa"
-                    rel="external"
+                    rel="noreferrer"
                     target="_blank"
                     className={styles.social_icon}
                   >
