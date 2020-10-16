@@ -4,41 +4,41 @@
     "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
     "imgSrc": "https://picsum.photos/200/300?random=1",
     "category": "programation",
-    "link": "/"
+    "link": "/post/13456"
+    },
+  {
+    "title": "This is the title of my epic post",
+    "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
+    "imgSrc": "https://picsum.photos/200/300?random=1",
+    "category": "programation",
+    "link": "/post/13456"
   },
   {
     "title": "This is the title of my epic post",
     "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
     "imgSrc": "https://picsum.photos/200/300?random=1",
     "category": "programation",
-    "link": "/"
+    "link": "/post/13456"
   },
   {
     "title": "This is the title of my epic post",
     "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
     "imgSrc": "https://picsum.photos/200/300?random=1",
     "category": "programation",
-    "link": "/"
+    "link": "/post/13456"
   },
   {
     "title": "This is the title of my epic post",
     "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
     "imgSrc": "https://picsum.photos/200/300?random=1",
     "category": "programation",
-    "link": "/"
+    "link": "/post/13456"
   },
   {
     "title": "This is the title of my epic post",
     "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
     "imgSrc": "https://picsum.photos/200/300?random=1",
     "category": "programation",
-    "link": "/"
-  },
-  {
-    "title": "This is the title of my epic post",
-    "description": "This is a demo description of my epic post, all this data will be removed when i apply a rest api",
-    "imgSrc": "https://picsum.photos/200/300?random=1",
-    "category": "programation",
-    "link": "/"
+    "link": "/post/13456"
   }
 ]
