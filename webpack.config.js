@@ -1,7 +1,7 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CleanTerminalWebpackPlugin = require('clean-terminal-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-
+const {resolve} = require('path')
 module.exports = (env, options) => {
   return {
     resolve: {
@@ -9,7 +9,8 @@ module.exports = (env, options) => {
     },
     entry: ['@babel/polyfill', './src/index.tsx'],
     output: {
-      filename: 'app.bundle.js'
+      filename: 'app.bundle.js',
+      path: resolve(__dirname, '..', 'personal-website-backend', 'src', 'dist')
     },
     module: {
       rules: [
