@@ -6,6 +6,7 @@ import HomeView from './views/Home/Home.view'
 import AboutView from './views/About/About.view'
 import BlogView from './views/Blog/Blog.view'
 import BlogCategoryView from './views/BlogCategory/BlogCategotyView.view'
+import PostView from './views/Post/Post.view'
 
 export default class Router extends Component {
   render(): ReactNode {
@@ -19,6 +20,7 @@ export default class Router extends Component {
           exact
           component={BlogCategoryView}
         />
+        <Route path="/post/" exact component={PostView} />
       </>
     )
   }
